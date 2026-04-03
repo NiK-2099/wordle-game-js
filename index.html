@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Wordle</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="resources/wordle-logo.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <h1>Wordle</h1>
+
+    <div>
+        <div class="container">
+
+            <div class="box">
+                <h3>
+                    Wordle — how to play
+                </h3>
+
+                <p>
+                    Guess the hidden 6‑letter word in six tries. Type a valid 6‑letter guess and submit. Each letter
+                    will be
+                    colored: green = correct letter in the correct spot; yellow = correct letter in the word but wrong
+                    spot;
+                    gray = letter not in the word. Use the feedback to refine subsequent guesses until you find the word
+                    or
+                    run out of attempts.
+                </p>
+            </div>
+
+            <div class="box">
+
+                <div id="grid"></div>
+
+                <button id="guessBtn" onclick="submitGuess()">Guess</button>
+                <button onclick="newGame()">New Game!</button>
+
+
+            </div>
+
+            <div class="box">
+                <p id="score"></p>
+                <p id="message"></p>
+                <!-- <p id="words"></p> -->
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
